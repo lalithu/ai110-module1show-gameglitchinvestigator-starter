@@ -47,3 +47,25 @@ def test_score_win_decreases_with_attempts():
 def test_score_penalty():
     score = update_score(100, "Too High", 2)
     assert score == 95
+
+
+def test_negative_input():
+    ok, value, err = parse_guess("-5")
+    assert ok is True
+    assert value == -5
+
+
+def test_decimal_input_rejected():
+    ok, value, err = parse_guess("5.5")
+    assert ok is False
+
+
+def test_large_number():
+    ok, value, err = parse_guess("999999999")
+    assert ok is True
+    assert value == 999999999
+
+
+def test_score_minimum_points():
+    score = update_score(0, "Win", 20)
+    assert score >= 10

@@ -36,9 +36,10 @@ I fixed these issues by standardizing data types (keeping the secret as an integ
 
 ## 📸 Demo
 
-- [ ] [Insert a screenshot of your fixed, winning game here]
+- A screenshot of my fixed, winning game here
 ![Winning Game Screenshot](image.png)
 
 ## 🚀 Stretch Features
 
-- [ ] [If you choose to complete Challenge 4, insert a screenshot of your Enhanced Game UI here]
+- Completed Challenge 1: Advanced edge-case testing
+![Pytest Results](tests_image.png)
